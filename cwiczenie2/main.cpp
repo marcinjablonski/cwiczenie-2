@@ -19,10 +19,16 @@ public:
                 for (int j=1; j<=ilosc-i; j++)
                     cout << " ";
                 for (int k=1; k<=(2*i)-1; k++)
-                    cout << "*";
-                cout << endl;
+                    {
+                        if (k%2==0)
+                        cout << " ";
+                        else
+                        cout << "*";
+                    }
+        cout <<endl;
             }
-    }
+
+}
 };
 
 
@@ -34,4 +40,4 @@ int main(int argc, char* argv)
   p.iloscw(ilosc);
   p.jolo();
   return 0;
-}
+};
